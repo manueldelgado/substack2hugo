@@ -1,0 +1,22 @@
+---
+```gitignore
+# Ignore compiled Go binaries
+*.exe
+*.out
+*.test
+
+# Ignore runtime output and Substack exports
+/hugohtml/
+*.csv
+/posts/
+
+# Ignore temporary files
+*.log
+*.tmp
+
+# OS-specific ignores
+.DS_Store
+Thumbs.db
+
+# Ignore backup files
+*~
