@@ -9,6 +9,8 @@
 /hugohtml/
 *.csv
 /posts/
+*.jsonl
+substack2hugo
 
 # Ignore temporary files
 *.log
