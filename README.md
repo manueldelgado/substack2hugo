@@ -29,6 +29,9 @@ It uses the OpenAI Batch API to generate the missing metadata (SEO title, SEO de
 - This version enhances functionality by generating **SEO-optimized titles, descriptions, and keywords** for each blog post using **OpenAI GPT-4.1**.
 - The process is now divided into **three steps**:
 
+> [!IMPORTANT]
+> If you are not interested in generating descriptions or keywords and the existing title works just fine for you (or are unable/unwilling to use the OpenAI API), you might be more interested in the [v1.0.0 version](https://github.com/manueldelgado/substack2hugo/releases/tag/v1.0.0), which does not bother with those enhancements. 
+
 ### 1. Create the Batch File
 
 Use the `generate-batch` module to create a `posts2upload.jsonl` file. This file contains the prompts (the original Substack HTML posts combined with a prompt template) to be processed by the OpenAI API.
@@ -60,7 +63,7 @@ You can customize:
   - `posts.csv` 
   - `/posts/` — a folder containing all post HTML files (named with their `post_id`).
 
-- - **Input (included here)**:
+- **Input (included here)**:
   - `prompt.txt` - this is the prompt I have used, adapted from polepole's answer to [this question](https://community.openai.com/t/keywords-for-my-article-text/932201) on the OpenAI forums. You might wish to modify the prompt based on your preferences.
 
 - **Output**:
